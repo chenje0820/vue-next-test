@@ -1,9 +1,10 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Vuex</router-link> |
+    <router-link to="/route">Router</router-link> |
+    <router-link to="/test">Test</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
