@@ -1,0 +1,6 @@
+@import './mixin.scss';
+
+.test_content1 {
+  text-align: left;
+  @include theme;
+}
