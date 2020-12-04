@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import  { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
@@ -14,7 +14,19 @@ const routes = [
     path: '/test',
     name: 'Test',
     component: () => import('../views/Test.vue')
-  }
+  },
+  {
+    path: '/other',
+    name: 'Other',
+    component: () => import('../views/Other.vue'),
+    children:[
+      {
+        path: 'lifeCycle',
+        name: 'LifeCycle',
+        component: () => import('../views/other/lifeCycleFun.vue')
+      },
+    ]
+  },
 ]
 
 const router = createRouter({

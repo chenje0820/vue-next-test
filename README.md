@@ -45,3 +45,18 @@ Vue CLI v4.3.1
        <p>youyou</p>
      </div>
    </template>
+
+# 使用 element-ui
+
+1. npm install element-plus --save
+2. main.js 中添加
+
+   import { createApp } from 'vue'
+   // ui 库
+   import ElementPlus from 'element-plus';
+   import 'element-plus/lib/theme-chalk/index.css';
+   const app = createApp(App)
+   app.use(ElementPlus)
+   app.use(store).use(router).mount('#app')
+
+3. 组件中按照文档使用
